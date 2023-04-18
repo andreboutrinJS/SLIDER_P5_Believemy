@@ -1,0 +1,67 @@
+
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background:#131416;
+}
+
+.containers{
+max-width:768px;
+position: relative;
+margin: auto;
+}
+
+
+/* masquer les images */
+.slides{
+display: none;}
+
+/* les fleches */
+.prev,
+.next{
+cursor: pointer;
+color: white;
+position: absolute;
+top:50%;
+transform: translate(0,-50%);;
+padding:16px;
+ border-radius: 0 7px 7px 0;
+ background:rgb(0,0,0,.5);
+opacity:1;
+}
+.next{
+right: 0;
+border-radius: 7px 0 0 7px;
+}
+
+.prev:hover,
+.next:hover{
+background: rgba(0,0,0,.8);
+}
+
+
+.dots{
+max-width: 768px;
+margin: auto;
+width: 100%;
+border: solid white;
+text-align:center;
+
+}
+.dot{
+cursor:pointer;
+height:20px;
+width: 20px;
+border-radius: 50%;
+margin: 0 2px;
+display: inline-block;
+
+background:#ddd;
+}
+.active,
+.dot:hover{
+background-color:#717171;
+}
